@@ -283,6 +283,9 @@ body{
 .item-4 {
     position: relative;
     padding: 20px 0;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    /* Added margin bottom */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,7 +295,7 @@ body{
     font-family: 'Bebas Neue', cursive;
     font-size: 3em;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-image: linear-gradient(gold, gold);
@@ -320,8 +323,9 @@ body{
 /* Media Queries */
 @media (max-width: 700px) {
     .item-4 {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 40px;
+        /* Increase space on mobile devices */
+        margin-bottom: 40px;
         /* Increase space on mobile devices */
     }
 }
@@ -331,6 +335,7 @@ body{
         margin-top: 10px;
         /* Decrease space on screens above 700px */
         margin-bottom: 10px;
+        /* Decrease space on screens above 700px */
     }
 }
 /* END */
