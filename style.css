@@ -574,19 +574,20 @@ body{
     }
 }
 /* FOOTER */
-
+/* Footer */
 .footer {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer .col {
-    width: 190px;
-    height: auto;
+    width: 25%;
     box-sizing: border-box;
     padding: 0px 20px 20px 20px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .footer .col h1 {
@@ -597,7 +598,7 @@ body{
     line-height: 17px;
     padding: 20px 0px 5px 0px;
     color: rgba(0, 0, 0, 0.2);
-    font-weight : normal;
+    font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.250em;
 }
@@ -616,60 +617,23 @@ body{
     padding: 5px 0px 5px 0px;
     cursor: pointer;
     transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
 }
 
 .social ul li {
     display: inline-block;
-    padding-right: 5px ;
+    padding-right: 5px;
 }
 
 .footer .col ul li:hover {
     color: #000000;
     transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
 }
 
 .clearfix {
     clear: both;
 }
 
-.contain {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-@media only screen and (max-width: 1139px) {
-    .contain .social {
-        width: 1000px;
-        display: block;
-    }
-
-    .social h1 {
-        margin: 0px;
-    }
-}
-
 @media only screen and (max-width: 950px) {
-    .footer .col {
-        width: 33%;
-    }
-
-    .footer .col h1 {
-        font-size: 14px;
-    }
-
-    .footer .col ul li {
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-width: 500px) {
     .footer .col {
         width: 50%;
     }
@@ -683,12 +647,11 @@ body{
     }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 500px) {
     .footer .col {
         width: 100%;
     }
 }
-
 /* Back to top Button */
 
 #backToTop {
@@ -722,19 +685,3 @@ body{
 #backToTop:hover::before {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-/* .container{
-    max-width: 970px;
-    margin: auto;
-    padding: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 1fr 1fr;
-}
-
-.item { 
-    color: black;
-    font-size: 20px;
-    padding: 30px;
-    border: blue 1px solid;
-} */
